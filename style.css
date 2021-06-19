@@ -44,13 +44,27 @@ a, a:hover, a:focus, a:active {
     margin: 0;
     /* Remove margins */
     font-size: large;
-
-
 }
 
 #content {
     padding-top: 50px;
 }
+
+#email-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: darkorchid;
+    /* margin: 0 auto; */
+}
+
+#form {
+    /* flex: 1; */
+    font-size: large;
+}
+
 
 #iframe-container {
     height: 315px;
