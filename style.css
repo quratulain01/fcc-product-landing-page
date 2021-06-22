@@ -33,6 +33,7 @@ a, a:hover, a:focus, a:active {
 #nav-bar>ul {
     display: flex;
     justify-content: space-around;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
 }
 
@@ -56,21 +57,30 @@ a, a:hover, a:focus, a:active {
     align-items: center;
     text-align: center;
     justify-content: center;
-    background-color: darkorchid;
-    /* margin: 0 auto; */
+    height: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#h2{
+    font-size: 25px;
+    font-weight: bold;
+    flex: 1;
 }
 
 #form {
-    /* flex: 1; */
-    font-size: large;
+    flex: 2;
+}
+#form>input {
+    font-size: medium;
 }
 
-.shadow {
+#shadow {
     box-shadow: 0 0 50px rgba(68,68,68,0.6);
     display: flex;
     flex-direction: column;
     width: 900px;
-    margin: 50px auto;
+    margin: 0 auto 50px auto;
     padding: 10px;
     justify-content: center;
     height: 260px;
@@ -83,20 +93,24 @@ a, a:hover, a:focus, a:active {
     flex: 1;
 }
 
+#Featureitems {
+    font-size: x-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#exp {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .icon {
     flex: 1;
     text-align: center;
-    /* background-color: tomato; */
     color: teal;
-
 }
 
 .description {
     flex: 4;
-
 }
-
-
 
 #iframe-container {
     height: 315px;
@@ -110,9 +124,7 @@ a, a:hover, a:focus, a:active {
 
 #packages {
     display: flex;
-    /* justify-content:space-between; */
     max-width: 1000px;
-    /* background-color: rgb(231, 152, 168); */
     margin: auto;
     margin-top: 50px;
 }
@@ -122,25 +134,30 @@ a, a:hover, a:focus, a:active {
     border: 1px black solid;
     margin: 10px;
     text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 2;
 }
 
 .heading {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: rgba(117, 108, 59, 0.2);
 }
-
-.amount {}
-
-.info {}
 
 .btn {
     width: 80px;
     margin: auto;
     margin-bottom: 10px;
     background-color: cornflowerblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .btn:hover {
     background-color: rgb(91, 91, 184);
 }
+
+@media screen and (max-width: 1000px) {
+    #nav-bar {
+      float: none;
+      width: 100%;
+    }
+  }
